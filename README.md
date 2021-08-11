@@ -1,8 +1,8 @@
-PRODUCT REGISTRY SERVICE
+### PRODUCT REGISTRY SERVICE
 
-This particular Application gets a product ID as a GET Request, in order to retrieve the important fields about that product.
+#### This particular Application gets a product ID as a GET Request, in order to retrieve the important fields about that product.
 
-The Data is in the following format:
+###### The Data is in the following format:
 [{"product":
     {"available_to_promise_network":
         {"product_id":"13860428",
