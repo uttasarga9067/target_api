@@ -28,3 +28,4 @@
                 "product_description":
                 {"title":"The Big Lebowski (Blu-ray)"}]
 
+##### THIS APPLICATION IS BUILT USING PYTHON FLASK. THE CODE IS IN __INIT__.PY UNDER PRODUCT REGSITRY. ALSO, I USED POSTMAN FOR WORKING ON THE GET REQUEST PART.
