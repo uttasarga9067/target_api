@@ -6,11 +6,11 @@ import requests
 
 from flask import Flask, g,jsonify
 from flask_restful import Resource, Api, reqparse, request
-from product_registry.test_db import create_db
+# from product_registry.test_db import create_db
 # Create an instance of Flask
 app = Flask(__name__)
 # engine = create_engine("postgresql+psycopg2://postgres:uttasarga@localhost:5433/target_api")
-connection = create_db
+# connection = create_db
 # Create the API
 
 api = Api(app)
@@ -55,10 +55,10 @@ def index():
 
 
 
-class Prices(Resource):
-    def get(self):
-        price = connection.execute("SELECT * FROM prices ")
-        return {price}, 200
+# class Prices(Resource):
+#     def get(self):
+#         price = connection.execute("SELECT * FROM prices ")
+#         return {price}, 200
 
 class Device(Resource):
 
@@ -84,7 +84,7 @@ class Device(Resource):
 
 # api.add_resource(DeviceList, '/devices')
 api.add_resource(Device, '/device/<string:identifier>')
-api.add_resource(Prices, '/prices')
+# api.add_resource(Prices, '/prices')
 # if __name__ == '__main__':
 #     db.create_all()
 #     app.run()
